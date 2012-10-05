@@ -43,5 +43,5 @@ h1. Installation and Usage Notes
 
 h1. Contact Information
 
-CopyrightHeaderTool was made by the guys at Puzzle ITC. Please go to "http://www.puzzle.ch/":http://www.puzzle.ch/ in order to get in touch with us.
+PasswdLDAP was made by the guys at Puzzle ITC. Please go to "http://www.puzzle.ch/":http://www.puzzle.ch/ in order to get in touch with us.
 Developer: Philipp Gassmann
