@@ -1,0 +1,50 @@
+-#  | # COPYRIGHT HEADER START # 
+  |   PasswdLDAP is a Sinatra App that allows users to change their OpenLDAP Password
+  |   Copyright (C) 2012 Puzzle ITC GmbH www.puzzle.ch
+  |   
+  |   This program is free software: you can redistribute it and/or modify
+  |   it under the terms of the GNU Affero General Public License as
+  |   published by the Free Software Foundation, either version 3 of the
+  |   License, or (at your option) any later version.
+  |   
+  |   This program is distributed in the hope that it will be useful,
+  |   but WITHOUT ANY WARRANTY; without even the implied warranty of
+  |   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  |   GNU Affero General Public License for more details.
+  |   
+  |   You should have received a copy of the GNU Affero General Public License
+  |   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  | # COPYRIGHT HEADER END # 
+ 
+
+%p.info Enter your current credentials:
+.form
+  %form{ :action => "/", :method => "post"}
+    %table
+      %tr
+        %td.label
+          %label{:for => "username"} Username:
+        %td
+          %input{:type => "text", :name => "username", :class => "text", :value => @username }
+      %tr
+        %td.label
+          %label{:for => "password"} Password:
+        %td
+          %input{:type => "password", :name => "password", :class => "password"}
+      %tr
+        %td.label
+          %label Captcha:
+        %td
+          %pre
+            :preserve
+              #{@captcha}
+      %tr
+        %td.label
+          %label{:for => "captcha"} Answer:
+        %td
+          %input{:type => "text", :name => "captcha", :autocomplete => "off", :class => "text"}
+      %tr
+        %td
+        %td
+          %input.submit{:type => "submit", :value => "Continue", :class => "button"}
+

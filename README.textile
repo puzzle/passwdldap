@@ -1,0 +1,47 @@
+h1. PasswdLDAP
+
+PasswdLDAP is a Sinatra App that allows users to change their OpenLDAP Password
+
+Copyright (C) 2012 Puzzle ITC GmbH - www.puzzle.ch
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License 
+along with this program.  If not, see http://www.gnu.org/licenses/
+
+h1. Features
+
+* Users can change their LDAP Password in a simple webinterface
+* No openldap Manager account credentials needed, first bind is anonymous, and then rebind with user credentials for changing their password
+* Simple CAPTCHA with ASCII Art task
+* LDAP Functions in separate class
+* Test coverage
+
+h1. Requirements
+
+* Ruby
+* Bundler (gem install bundler)
+
+
+h1. Installation and Usage Notes
+
+# download: @git clone git://github.com/puzzle/passwdldap.git@
+# @cd passwdldap@
+# Install requirements with bundler: @bundle install@
+# Copy config.yml.example to config.yml and adapt to your Server
+# Run the tests: @rake test@ Note: Currently two tests will fail
+# Run the App: @bundle exec rackup@
+# Access the Webapp at http://localhost:9292/
+
+h1. Contact Information
+
+CopyrightHeaderTool was made by the guys at Puzzle ITC. Please go to "http://www.puzzle.ch/":http://www.puzzle.ch/ in order to get in touch with us.
+Developer: Philipp Gassmann

@@ -1,0 +1,8 @@
+ldap_settings:
+  :host: ldap.example.com
+  :port: 636
+  :base: 'dc=example,dc=com'
+  :encryption: :simple_tls
+
+session_key: change_me
+
